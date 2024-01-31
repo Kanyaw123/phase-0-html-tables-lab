@@ -1,12 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>HTML Tables</title>
-  </head>
-  <body>
-    <!-- Write your HTML here -->
-  </body>
+<html>
+
+<head>
+    <style>
+        table {
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .flag {
+            width: 20px;
+            height: 15px;
+            margin-right: 5px;
+        }
+
+        .blue-background {
+            background-color: lightblue;
+            color: black;
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <th>City</th>
+            <th>State</th>
+            <th>2017 estimate</th>
+        </tr>
+        <tr>
+            <td class="blue-background">New York City</td>
+            <td><img class="flag" src="new_york_flag.png" alt="New York Flag">New York</td>
+            <td>8,622,698</td>
+        </tr>
+        <tr>
+            <td class="blue-background">Los Angeles</td>
+            <td><img class="flag" src="california_flag.png" alt="California Flag">California</td>
+            <td>3,999,759'</td>
+        </tr>
+        <tr>
+            <td class="blue-background">Chicago</td>
+            <td><img class="flag" src="illinois_flag.png" alt="Illinois Flag">Illinois</td>
+            <td>2,716,450</td>
+        </tr>
+        <tr>
+            <td class="blue-background">Houston</td>
+            <td><img class="flag" src="texas_flag.png" alt="Texas Flag">Texas</td>
+            <td>2,312,717</td>
+        </tr>
+    </table>
+
+</body>
+
 </html>
